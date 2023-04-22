@@ -1,0 +1,122 @@
+
+th {
+    text-transform: uppercase;
+  }
+tr {
+    font-weight: 700;
+  }
+
+img {
+  max-width: 100%;
+}
+
+.img-tuqueques {
+    width: 7em;
+    height: 5em;
+    margin: auto;
+  }
+.fotoqueque{
+  float: left;
+  margin-right: 1em;
+  height: 10em;
+}
+
+.container {
+    background: #1f4037;
+    background: -webkit-linear-gradient(to right, #99f2c8, #1f4037); 
+    background: linear-gradient(to right, #99f2c8, #1f4037);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ .content {
+    max-width: 960px;
+    width: 100%;
+    height: 80vh;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16) , 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 10px;
+    position: relative;
+    padding: 1.8em;
+    overflow: scroll;
+  }
+  
+  .a:hover{
+    opacity: 0.8;
+  }
+
+  .actions {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  }
+  .close {
+  height: 40px;
+  width: 40px;
+  color: white;
+  border-radius: 50%;
+  background-color: #1f4037;
+  display: inline-block;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16) , 0 3px 6px rgba(0, 0, 0, 0.23);
+  font-weight: 400;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  }
+
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.titulo{
+  text-transform: uppercase;
+  border-bottom: solid 2px darkcyan ;
+  padding: 6px;
+  font-weight: 400;
+  font-size: 2em;
+}
+.paragraph{
+    line-height: 1.4em;
+    font-weight: 200;
+}
+.table {
+    width: 100%;
+    border-spacing: 0;
+}
+.table th, .table td {
+    text-align: left;
+    padding: 0.60em;
+    text-decoration: double;
+}
+.table tr:nth-child(2) {  background: #1f4037;
+    background: -webkit-linear-gradient(to right, #99f2c8, #1f4037); 
+    background: linear-gradient(to right, #99f2c8, #1f4037);}
+
+.fa-star {
+    color: goldenrod;
+}
+.position {
+  background-color: #1f4037;
+  color: antiquewhite;
+  padding: 4.5px;
+  border-radius: 10px;
+  margin-right: 0.5em;
+}
+
+@media (max-width:600px) {
+  .content { padding: 0.8em; }
+  td{ display: block;
+      width: 100%;
+  }
+  td:nth-of-type(1){
+   font-size: 1.3em;
+   font-weight: 700;
+  }
+
+  th { display: none;}
+}
+@media (min-height:550px) {
+  .content {height: 500px;}
+}
